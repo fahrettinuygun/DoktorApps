@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import './assets/font/fonts';
+@import '../node_modules/chart.js/dist/Chart.min.css';
+
+body {
+    background-color: #30373e;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    font-family: 'Roboto', Arial, Tahoma, sans-serif;
+}

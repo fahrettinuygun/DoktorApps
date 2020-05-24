@@ -1,146 +1,127 @@
-*{
-    color:white
+* {
+  color: white;
 }
 
-.header{
-    background-image: linear-gradient(to right, #6bd2dc, #38bfa0);
-    height: 300px;
-    box-shadow: 0px 1px 5px 0px #00000052;
+.header {
+  //box-shadow: 0px 1px 5px 0px #00000052;
 }
 
-.hospital-name{
-    font-weight: bold;
-    color: white;
-    font-family: "Fenix-Regular";
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
 }
 
-.search-input{
-    background-color: #dbf7fd;
-    color: white !important;
-    margin-top: 5px;
-    width: 65%;
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
 }
-ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.label-count {
+  position: absolute;
+  top: -3px;
+  //right: -2px;
+  font-size: 10px;
+  line-height: 15px;
+  background-color: #000;
+  padding: 0 4px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.color-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 239px;
+  padding: 0;
+  background: linear-gradient(45deg, #49cdd0, #ab9ae5);
+}
+
+.hospital-name {
+  font-weight: bold;
+  color: white;
+  font-family: "Fenix-Regular";
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.search-input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #eee;
+    border-radius: 0;
     padding: 0px;
-    margin: 0px;
-}
-li {
-    float: left;
-}
-
-.mini-profile{
-    border-radius: 100%;
-    height: 80px;
-    width: 80px;
-    background-image: url(https://nationaltoday.com/wp-content/uploads/2019/03/national-doctors-day.jpg);
-    background-size: contain;
-}
-
-.right-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-i{
+    width: 65%;
     color: white;
 }
 
-.profile-box{
-    display: flex;
-    flex-direction: column;
-
+.right-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+i {
+  color: white;
 }
 
-.search-bar{
-    display: flex;
-    align-items: center;
-}
-
-.profile-info{
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-}
-
-.app-name{
-    margin:0px;
-}
-
-.slogan{
-    font-size: 10px;
-    margin-top: -6px;
-}
-
-.profile-row{
-    margin: 25px 0px 25px 0px;
+.search-bar {
     display: flex;
     align-items: center;
-}
-
-.daily-report{
-    margin-left:10px;
-}
-
-.report-box{
-    padding: 1px;
-    div{
-        background-color: white;
-        height: 100%;
-        border-radius: 3px;
-        p{
-            text-align: center;
-            color: var(--secondary);
-            font-size: 12px;
-            margin: 0px;
-            margin-top: -6px;
-            i{
-                color: #495057;
-            }
-        }
-        h4{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #495057;
-            margin: 0px;
-            padding-top: 3px;
-            span{
-            font-size: 12px;
-            color: #495057;
-            }
-        }
+    position: fixed;
+    top: 0px;
+    z-index: 99;
+    width: 100%;
+    background: linear-gradient(45deg, #54c8d2, #ab9ae5);
+  ul {
+    list-style: outside none none;
+    margin: 5px 0 0 -5px;
+    padding: 0;
+  }
+  li {
+    float: left;
+    margin-right: 20px;
+    a {
+      color: #fff;
+      float: left;
+      font-size: 12px;
+      height: 29px;
+      line-height: 29px;
+      text-align: center;
+      width: 29px;
+      i {
+        display: inline-block;
+        font-size: 18px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+      }
     }
-    .tooltip-text{
-        display: none; 
-        position: absolute;
-        bottom: -20px;
-        left: 7px;
-        z-index: 99;
-        border-radius: 0px 5px 5px 5px;
-        background: #adb5bd;
-        width: auto;
-        text-align: center;
-        font-size: 12px;
-        padding: 0px 5px 0px 5px;
-        box-shadow: 1px 1px 4px #00000078;
-    }
+  }
 }
 
-.report-box-div{
-    margin:0px;
+.search-input-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.report-header{
-    margin:0px;
+
+.app-name {
+  margin: 0px;
+  font-family: "BalooThambi2-Medium";
 }
-.waiting-call:hover + .for-waiting-call { display: block; }
-.end-call:hover + .for-end-call { display: block; }
-.wallet:hover + .for-wallet { display: block; }
+
+.slogan {
+  font-size: 10px;
+  margin-top: -6px;
+  font-family: "BalooThambi2-Medium";
+}
