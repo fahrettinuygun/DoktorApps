@@ -11,7 +11,7 @@
                     <span>
                         <ul>
                             <li><a><i class="fas fa-envelope"></i></a></li>
-                            <li><a><i class="fas fa-user-md"></i></a></li>
+                            <li><a><i [routerLink]="['/profile']" routerLinkActive="router-link-active"  class="fas fa-user-md"></i></a></li>
                             <li><a><i class="fas fa-sign-out-alt"></i></a></li>
                         </ul>
                     </span>
@@ -56,82 +56,19 @@
         </div>
     </div>
     <div class="menu">
-        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: calc(100vh - 184px);"><ul class="list" style="overflow: hidden; width: auto; height: calc(100vh - 184px);">
-            <li class="header">MAIN NAVIGATION</li>
-            <li class="active open"><a href="index.html" class="toggled waves-effect waves-block"><i class="fas fa-home"></i><span>Dashboard</span></a></li>                                               
-            <li><a href="javascript:void(0);" class="menu-toggle waves-effect waves-block"><i class="fas fa-calendar"></i><span>Appointment</span> </a>
-                <ul class="ml-menu">
-                    <li><a href="doctor-schedule.html" class=" waves-effect waves-block">Doctor Schedule</a></li>
-                    <li><a href="book-appointment.html" class=" waves-effect waves-block">Book Appointment</a></li>
-                </ul>
-            </li>
-            <li><a href="javascript:void(0);" class="menu-toggle waves-effect waves-block"><i class="fas fa-user-md"></i><span>Doctors</span> </a>
-                <ul class="ml-menu">
-                    <li><a href="doctors.html" class=" waves-effect waves-block">All Doctors</a></li>
-                    <li><a href="add-doctor.html" class=" waves-effect waves-block">Add Doctor</a></li>                       
-                    <li><a href="profile.html" class=" waves-effect waves-block">Doctor Profile</a></li>
-                </ul>
-            </li>
-            <li><a href="javascript:void(0);" class="menu-toggle waves-effect waves-block"><i class="fas fa-user"></i><span>Patients</span> </a>
-                <ul class="ml-menu">
-                    <li><a href="patients.html" class=" waves-effect waves-block">All Patients</a></li>
-                    <li><a href="add-patient.html" class=" waves-effect waves-block">Add Patient</a></li>                       
-                    <li><a href="patient-profile.html" class=" waves-effect waves-block">Patient Profile</a></li>
-                    <li><a href="patient-invoice.html" class=" waves-effect waves-block">Patient Invoice</a></li>
-                </ul>
-            </li>
-            <li><a href="javascript:void(0);" class="menu-toggle waves-effect waves-block"><i class="fas fa-wallet"></i><span>Payments</span> </a>
-                <ul class="ml-menu">
-                    <li> <a href="payments.html" class=" waves-effect waves-block">Payments</a></li>
-                    <li> <a href="add-payments.html" class=" waves-effect waves-block">Add Payment</a></li>
-                    <li> <a href="patient-invoice.html" class=" waves-effect waves-block">Patient Invoice</a></li>
-                </ul>
-            </li>
-            <li><a href="reports.html" class=" waves-effect waves-block"><i class="fas fa fa-file-alt"></i><span>Reports</span></a></li>
-            <li><a href="widgets.html" class=" waves-effect waves-block"><i class="fas fa-box"></i><span>Widgets</span></a></li>
-            <li> <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block"><i class="fas fa-copy"></i><span>Extra Pages</span> </a>
-                <ul class="ml-menu">
-                    <li> <a href="sign-in.html" class=" waves-effect waves-block">Sign In</a> </li>
-                    <li> <a href="sign-up.html" class=" waves-effect waves-block">Sign Up</a> </li>
-                    <li> <a href="forgot-password.html" class=" waves-effect waves-block">Forgot Password</a> </li>
-                    <li> <a href="404.html" class=" waves-effect waves-block">Page 404</a> </li>
-                    <li> <a href="500.html" class=" waves-effect waves-block">Page 500</a> </li>
-                    <li> <a href="page-offline.html" class=" waves-effect waves-block">Page Offline</a> </li>
-                    <li> <a href="locked.html" class=" waves-effect waves-block">Locked Screen</a> </li>
-                    <li> <a href="blank.html" class=" waves-effect waves-block">Blank Page</a> </li>
-                </ul>
-            </li>
-            <li> <a href="javascript:void(0);" class="menu-toggle waves-effect waves-block"><i class="fas fa-columns"></i><span>User Interface (UI)</span> </a>
-                <ul class="ml-menu">
-                    <li> <a href="typography.html" class=" waves-effect waves-block">Typography</a> </li>
-                    <li> <a href="helper-classes.html" class=" waves-effect waves-block">Helper Classes</a></li>
-                    <li> <a href="alerts.html" class=" waves-effect waves-block">Alerts</a> </li>
-                    <li> <a href="animations.html" class=" waves-effect waves-block">Animations</a> </li>
-                    <li> <a href="badges.html" class=" waves-effect waves-block">Badges</a> </li>
-                    <li> <a href="breadcrumbs.html" class=" waves-effect waves-block">Breadcrumbs</a> </li>
-                    <li> <a href="buttons.html" class=" waves-effect waves-block">Buttons</a> </li>
-                    <li> <a href="collapse.html" class=" waves-effect waves-block">Collapse</a> </li>
-                    <li> <a href="colors.html" class=" waves-effect waves-block">Colors</a> </li>
-                    <li> <a href="dialogs.html" class=" waves-effect waves-block">Dialogs</a> </li>
-                    <li> <a href="icons.html" class=" waves-effect waves-block">Icons</a> </li>
-                    <li> <a href="labels.html" class=" waves-effect waves-block">Labels</a> </li>
-                    <li> <a href="list-group.html" class=" waves-effect waves-block">List Group</a> </li>
-                    <li> <a href="media-object.html" class=" waves-effect waves-block">Media Object</a> </li>
-                    <li> <a href="modals.html" class=" waves-effect waves-block">Modals</a> </li>
-                    <li> <a href="notifications.html" class=" waves-effect waves-block">Notifications</a> </li>
-                    <li> <a href="pagination.html" class=" waves-effect waves-block">Pagination</a> </li>
-                    <li> <a href="preloaders.html" class=" waves-effect waves-block">Preloaders</a> </li>
-                    <li> <a href="progressbars.html" class=" waves-effect waves-block">Progress Bars</a> </li>
-                    <li> <a href="range-sliders.html" class=" waves-effect waves-block">Range Sliders</a> </li>
-                    <li> <a href="sortable-nestable.html" class=" waves-effect waves-block">Sortable &amp; Nestable</a> </li>
-                    <li> <a href="tabs.html" class=" waves-effect waves-block">Tabs</a> </li>
-                    <li> <a href="waves.html" class=" waves-effect waves-block">Waves</a> </li>
-                </ul>
-            </li>
-            <li class="header">LABELS</li>
-            <li> <a href="javascript:void(0);" class=" waves-effect waves-block"><i class="fas fa-star"></i><span>Important</span> </a> </li>
-            <li> <a href="javascript:void(0);" class=" waves-effect waves-block"><i class="fas fa-exclamation-triangle"></i><span>Warning</span> </a> </li>
-            <li> <a href="javascript:void(0);" class=" waves-effect waves-block"><i class="fas fa-info-circle"></i><span>Information</span> </a> </li>
-        </ul><div class="slimScrollBar" style="background: rgba(0, 0, 0, 0.2); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 51.425px;"></div><div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: calc(100vh - 184px);">
+            <ul class="list" style="overflow: hidden; width: auto; height: calc(100vh - 184px);">
+                <li class="header">MENÜLER</li>
+                <li><a [routerLink]="['/dashboard']" routerLinkActive="router-link-active" class="menu-toggle waves-effect waves-block"><i class="fas fa-home"></i><span>Anasayfa</span></a></li>                                             
+                <li><a [routerLink]="['/profile']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-calendar"></i><span>Randevu Takvimi</span></a></li>                               
+                <li><a [routerLink]="['/profile']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-stopwatch"></i><span>Randevularım</span></a></li>                                              
+                <li><a [routerLink]="['/profile']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-user-md"></i><span>Profilim</span></a></li>                           
+                <li><a [routerLink]="['/profile']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-user"></i><span>Hastalarım</span></a></li>                           
+                <li><a [routerLink]="['/profile']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-file-alt"></i><span>Raporlar</span></a></li>                       
+                <li><a [routerLink]="['/profile']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-tools"></i><span>Ayarlar</span></a></li>
+            </ul>
+            <div class="slimScrollBar" style="background: rgba(0, 0, 0, 0.2); width: 4px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 0px; z-index: 99; right: 1px; height: 51.425px;"></div>
+            <div class="slimScrollRail" style="width: 4px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 0px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; right: 1px;"></div>
+        </div>
     </div>
 </div>
