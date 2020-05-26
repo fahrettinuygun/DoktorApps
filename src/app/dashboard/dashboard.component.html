@@ -6,7 +6,7 @@
 <div class="row clearfix">
     <div class="col-lg-3 col-md-3 col-sm-6">
         <div class="info-box-4 hover-zoom-effect">
-            <div class="icon"> <i class="fa fa-user"></i> </div>
+            <div class="icon"> <i class="fa fa-user color-blue"></i> </div>
             <div class="info-content">
                 <div class="text">New Patient</div>
                 <div class="number">27</div>
@@ -15,7 +15,7 @@
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6">
         <div class="info-box-4 hover-zoom-effect">
-            <div class="icon"> <i class="fa fa-user"></i> </div>
+            <div class="icon"> <i class="fa fa-user color-yellow"></i> </div>
             <div class="info-content">
                 <div class="text">OPD Patient</div>
                 <div class="number">12</div>
@@ -24,7 +24,7 @@
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6">
         <div class="info-box-4 hover-zoom-effect">
-            <div class="icon"> <i class="fa fa-bug"></i> </div>
+            <div class="icon"> <i class="fa fa-bug color-orange"></i> </div>
             <div class="info-content">
                 <div class="text">Today's Operations</div>
                 <div class="number">05</div>
@@ -33,7 +33,7 @@
     </div>
     <div class="col-lg-3 col-md-3 col-sm-6">
         <div class="info-box-4 hover-zoom-effect">
-            <div class="icon"> <i class="fa fa-landmark"></i> </div>
+            <div class="icon"> <i class="fa fa-landmark color-green"></i> </div>
             <div class="info-content">
                 <div class="text">Hospital Earning</div>
                 <div class="number">$3,540</div>
@@ -60,7 +60,7 @@
             </div>
             <div class="body"><iframe class="chartjs-hidden-iframe"
                     style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
-                <canvas id="line_chart" height="624" width="2680"
+                <canvas id="line_chart_1" height="624" width="2680"
                     style="display: block; width: 1340px; height: 312px;"></canvas>
             </div>
         </div>
@@ -84,25 +84,10 @@
                 </ul>
             </div>
             <div class="body">
-                <div class="stats-report">
-                    <div class="stat-item">
-                        <h5>Overall</h5>
-                        <b class="col-indigo">70.40%</b>
-                    </div>
-                    <div class="stat-item">
-                        <h5>Montly</h5>
-                        <b class="col-indigo">25.80%</b>
-                    </div>
-                    <div class="stat-item">
-                        <h5>Day</h5>
-                        <b class="col-indigo">12.50%</b>
-                    </div>
-                </div>
-                <div class="body"><iframe class="chartjs-hidden-iframe"
-                        style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
-                    <canvas id="line_chart" height="624" width="2680"
-                        style="display: inline-block; width: 406.656px; height: 100px; vertical-align: top;"></canvas>
-                </div>
+                <iframe class="chartjs-hidden-iframe"
+                    style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                <canvas id="line_chart_2" height="666" width="1332"
+                    style="display: block; height: 333px; width: 666px;"></canvas>
             </div>
         </div>
     </div>
@@ -123,28 +108,10 @@
                 </ul>
             </div>
             <div class="body">
-                <div class="stats-report">
-                    <div class="stat-item">
-                        <h5>Overall</h5>
-                        <b class="col-blue-grey">80.40%</b>
-                    </div>
-                    <div class="stat-item">
-                        <h5>Montly</h5>
-                        <b class="col-blue-grey">13.00%</b>
-                    </div>
-                    <div class="stat-item">
-                        <h5>Day</h5>
-                        <b class="col-blue-grey">9.50%</b>
-                    </div>
-                </div>
-                <div class="sparkline" data-type="line" data-spot-radius="3"
-                    data-highlight-spot-color="rgb(233, 30, 99)" data-highlight-line-color="#222"
-                    data-min-spot-color="rgb(233, 30, 99)" data-max-spot-color="rgb(96, 125, 139)"
-                    data-spot-color="rgb(96, 125, 139, 0.7)" data-offset="90" data-width="100%" data-height="100px"
-                    data-line-width="1" data-line-color="rgb(96, 125, 139, 0.7)"
-                    data-fill-color="rgba(96, 125, 139, 0.3)"><canvas width="406" height="100"
-                        style="display: inline-block; width: 406.656px; height: 100px; vertical-align: top;"></canvas>
-                </div>
+                <iframe class="chartjs-hidden-iframe"
+                    style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                <canvas id="line_chart_3" height="666" width="1332"
+                    style="display: block; height: 333px; width: 666px;"></canvas>
             </div>
         </div>
     </div>
@@ -165,28 +132,10 @@
                 </ul>
             </div>
             <div class="body">
-                <div class="stats-report">
-                    <div class="stat-item">
-                        <h5>Overall</h5>
-                        <b class="col-green">84.60%</b>
-                    </div>
-                    <div class="stat-item">
-                        <h5>Montly</h5>
-                        <b class="col-green">15.40%</b>
-                    </div>
-                    <div class="stat-item">
-                        <h5>Day</h5>
-                        <b class="col-green">5.10%</b>
-                    </div>
-                </div>
-                <div class="sparkline" data-type="line" data-spot-radius="3"
-                    data-highlight-spot-color="rgb(233, 30, 99)" data-highlight-line-color="#222"
-                    data-min-spot-color="rgb(233, 30, 99)" data-max-spot-color="rgb(120, 184, 62)"
-                    data-spot-color="rgb(120, 184, 62, 0.7)" data-offset="90" data-width="100%" data-height="100px"
-                    data-line-width="1" data-line-color="rgb(120, 184, 62, 0.7)"
-                    data-fill-color="rgba(120, 184, 62, 0.3)"><canvas width="406" height="100"
-                        style="display: inline-block; width: 406.656px; height: 100px; vertical-align: top;"></canvas>
-                </div>
+                <iframe class="chartjs-hidden-iframe"
+                    style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                <canvas id="line_chart_4" height="666" width="1332"
+                    style="display: block; height: 333px; width: 666px;"></canvas>
             </div>
         </div>
     </div>

@@ -10,6 +10,7 @@ import { ReportsComponent } from './reports/reports.component';
 
 
 const routes: Routes = [
+  {path: '', component: DashboardComponent},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'calendar', component: CalendarComponent},
