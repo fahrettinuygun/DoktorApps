@@ -47,7 +47,7 @@ export class DashboardComponent implements OnInit {
       config = {
         type: 'line',
         data: {
-          labels: ["January", "February", "March", "April", "May", "June", "July"],
+          labels: ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz"],
           datasets: [{
             label: "My First dataset",
             data: [65, 59, 80, 81, 56, 55, 40],
@@ -94,11 +94,11 @@ export class DashboardComponent implements OnInit {
             label: 'Dataset 1'
           }],
           labels: [
-            'Red',
-            'Orange',
-            'Yellow',
-            'Green',
-            'Blue'
+            'Kırmızı',
+            'Turuncu',
+            'Sarı',
+            'Yeşil',
+            'Mavi'
           ]
         },
         options: {
@@ -128,11 +128,11 @@ export class DashboardComponent implements OnInit {
             label: 'Dataset 1'
           }],
           labels: [
-            'Red',
-            'Orange',
-            'Yellow',
-            'Green',
-            'Blue'
+            'Kırmızı',
+            'Turuncu',
+            'Sarı',
+            'Yeşil',
+            'Mavi'
           ]
         },
         options: {
@@ -155,7 +155,7 @@ export class DashboardComponent implements OnInit {
       config = {
 				type: 'bar',
 				data: {
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+          labels: ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz"],
           datasets: [{
             label: 'Dataset 1',
             backgroundColor: this.chartColors.red,

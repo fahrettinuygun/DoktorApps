@@ -7,17 +7,22 @@ import { MeetingsComponent } from './meetings/meetings.component';
 import { PatientsComponent } from './patients/patients.component';
 import { SettingsComponent } from './settings/settings.component';
 import { ReportsComponent } from './reports/reports.component';
+import { LoginComponent } from './login/login.component';
+import { MainComponent } from './main/main.component';
 
 
 const routes: Routes = [
-  {path: '', component: DashboardComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'profile', component: ProfileComponent},
-  {path: 'calendar', component: CalendarComponent},
-  {path: 'meetings', component: MeetingsComponent},
-  {path: 'patients', component: PatientsComponent},
-  {path: 'reports', component: ReportsComponent},
-  {path: 'settings', component: SettingsComponent},
+  {path: 'login', component: LoginComponent},
+  {path: '', component: MainComponent, children: [
+    {path: '', component: DashboardComponent},
+    {path: 'dashboard', component: DashboardComponent},
+    {path: 'profile', component: ProfileComponent},
+    {path: 'calendar', component: CalendarComponent},
+    {path: 'meetings', component: MeetingsComponent},
+    {path: 'patients', component: PatientsComponent},
+    {path: 'reports', component: ReportsComponent},
+    {path: 'settings', component: SettingsComponent},
+  ]},
 ];
 
 @NgModule({

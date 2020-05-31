@@ -6,12 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { CalendarComponent } from './calendar/calendar.component';
-import { MeetingsComponent } from './meetings/meetings.component';
-import { PatientsComponent } from './patients/patients.component';
-import { ReportsComponent } from './reports/reports.component';
-import { SettingsComponent } from './settings/settings.component';
+import { LoginComponent } from './login/login.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -20,12 +16,8 @@ import { SettingsComponent } from './settings/settings.component';
     FooterComponent,
     MenuComponent,
     routingComponents,
-    DashboardComponent,
-    CalendarComponent,
-    MeetingsComponent,
-    PatientsComponent,
-    ReportsComponent,
-    SettingsComponent
+    LoginComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
