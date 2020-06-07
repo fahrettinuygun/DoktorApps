@@ -1,14 +1,131 @@
-.block-header {
-  margin-bottom: 15px;
-  padding: 10px 0;
-  min-height: 90vh;
-  h2 {
-    margin: 0 !important;
-    color: #30373e !important;
-    font-weight: 600;
-    font-size: 20px;
+
+
+.profile-info{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-header {
+  color: #fff;
+  background: rgba(0,0,0,0) url(../../assets/profile-bg.jpg) repeat scroll center center/cover;
+  position: relative;
+  border-radius: 3px 3px 0 0;
+}
+.mb-0, .my-0 {
+  margin-bottom: 0!important;
+}
+h4 {
+  font-size: 1.5rem;
+}
+.col-white {
+  color: #fff !important;
+}
+
+.social-icon a {
+  margin: 0 5px;
+}
+
+a {
+  outline: none !important;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.p-l-0.p-r-0{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.avatar{
+  background-image: url(https://nationaltoday.com/wp-content/uploads/2019/03/national-doctors-day.jpg);
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  background-size: contain;
+  background-position: center;
+}
+.profile-button{
+  margin:10px;
+}
+
+.profile-sub-header {
+  min-height: 60px;
+  width: 100%;
+}
+
+.box-list ul {
+  display: inline-table;
+  table-layout: fixed;
+  width: 100%;
+  background: #f5f5f5;
+  padding: 0px;
+  li {
+    border-right: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    display: table-cell;
+    list-style: outside none none;
+    a {
+      display: block;
+      padding: 15px 0;
+      color: #424242;
+      p{
+        margin: 0px;
+      }
+      i {
+        font-size: 20px;
+    }
   }
-  .text-muted {
-    color: #636c72 !important;
+  
+}
+}
+
+.card {
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+  min-height: 50px;
+  position: relative;
+  margin-bottom: 30px;
+  border: none;
+  flex-direction: column;
+    min-width: 0;
+    display: flex;
+    .header {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      -ms-box-shadow: none;
+      box-shadow: none;
+      color: #424242;
+      padding: 20px;
+      position: relative;
+      h2 {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #000;
+    }
   }
+  .body {
+    color: #424242;
+    font-weight: 400;
+    padding: 20px;
+}
 }
