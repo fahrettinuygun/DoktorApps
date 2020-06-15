@@ -12,7 +12,7 @@ import { MainComponent } from './main/main.component';
 
 
 const routes: Routes = [
-  {path: '', component: LoginComponent},
+  {path: '', component: LoginComponent },
   {path: 'login', component: LoginComponent},
   {path: 'app', component: MainComponent, children: [
     {path: '', component: DashboardComponent},

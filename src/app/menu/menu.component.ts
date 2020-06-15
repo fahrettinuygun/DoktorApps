@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Helper } from 'src/helpers/helper';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private helper: Helper,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
   }
-
+  logOut(){
+    this.helper.setCookie('userInfo',"",0);
+    this.router.navigate(['/login']);
+  }
 }

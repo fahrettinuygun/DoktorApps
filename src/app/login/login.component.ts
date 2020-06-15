@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from 'src/services/login.service';
 import { Router } from '@angular/router';
+import { Helper } from 'src/helpers/helper';
 
 @Component({
   selector: 'app-login',
@@ -13,19 +14,26 @@ export class LoginComponent implements OnInit {
   constructor(
     private router: Router,
     private loginService: LoginService,
+    private helper: Helper
   ) {
    }
 
   ngOnInit(): void {
+    if(this.helper.getCookie('userInfo')){
+      this.router.navigate(['/app']);
+    }
   }
 
-  signIn = function() {
-    this.router.navigate(['/app']);
-    // if(this.loginService.signIn(this.mail,this.password)){
-    //   this.router.navigate(['/app']);
-    // }
-    // else{
-    //   alert('Mail veya parola yanlış!');
-    // }
+  signIn = async function() {
+    let result = await this.loginService.signIn(this.mail,this.password);
+    if(result.success){
+      console.log(result.data);
+      this.helper.setCookie('userInfo',JSON.stringify(result.data),7)
+      this.router.navigate(['/app']);
+    }
+    else{
+      console.error('Login Error: ',result);
+      alert(result.message);
+    }
   }
 }

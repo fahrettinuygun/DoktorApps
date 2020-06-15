@@ -11,6 +11,7 @@ import { MainComponent } from './main/main.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Helper } from 'src/helpers/helper';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { CommonModule } from '@angular/common';
     MenuComponent,
     routingComponents,
     LoginComponent,
-    MainComponent
+    MainComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,9 +29,9 @@ import { CommonModule } from '@angular/common';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
   ],
-  providers: [],
+  providers: [Helper],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

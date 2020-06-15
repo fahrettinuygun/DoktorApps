@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 import { RequestParameterModel } from 'src/models/request-parameter-model';
+import { Observable } from 'rxjs';
+import { ResponseModel } from 'src/models/response-model';
 
 @Injectable({
   providedIn: 'root',
@@ -12,15 +14,12 @@ export class LoginService {
   {
   }
 
-  signIn = function (mail, password) {
-    // Burası hatalı çözemedim henüz. 
-    debugger;
-    let param = new HttpParams();
-    param.set('mail', mail);
-    param.set('password', password);
-    this.http.get('http://localhost:8080/login',{params: param}).subscribe((data) => {
-      debugger;
-      console.log(data);
-    });
+
+  signIn(mail, password) {
+    return new Promise(resolve =>{
+      this.http.get<any>("http://localhost:8080/login",{params: {mail: mail, password: password}}).subscribe(result => {
+        resolve(result);
+        });
+    })
   };
 }
