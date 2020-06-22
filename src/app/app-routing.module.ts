@@ -9,6 +9,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { ReportsComponent } from './reports/reports.component';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
+import { VideocallComponent } from './videocall/videocall.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,7 @@ const routes: Routes = [
     {path: 'patients', component: PatientsComponent},
     {path: 'reports', component: ReportsComponent},
     {path: 'settings', component: SettingsComponent},
+    {path: 'call', component: VideocallComponent},
   ]},
 ];
 
@@ -31,4 +33,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [DashboardComponent, ProfileComponent] 
+export const routingComponents = [DashboardComponent, ProfileComponent, CalendarComponent, MeetingsComponent, PatientsComponent, ReportsComponent, SettingsComponent, VideocallComponent] 

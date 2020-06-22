@@ -3,11 +3,11 @@
         <div class="col-md-12">
             <div class="row">
                 <div>
-                    <div class="mini-profile"></div>
+                    <img *ngIf="profile && profile.imageURL" [src]="profile.imageURL">
                 </div>
                 <div class="profile-info">
                     <span class="welcome">Merhaba</span>
-                    <span>Dr. Uygun</span>
+                    <span *ngIf="profile && profile.name && profile.surname" >{{profile.name}} {{profile.surname}}</span>
                     <span>
                         <ul>
                             <li><a><i class="fas fa-envelope"></i></a></li>
@@ -61,7 +61,8 @@
                 <li class="header">MENÜLER</li>
                 <li><a [routerLink]="['/app/dashboard']" routerLinkActive="router-link-active" class="menu-toggle waves-effect waves-block"><i class="fas fa-home"></i><span>Anasayfa</span></a></li>                                             
                 <li><a [routerLink]="['/app/calendar']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-calendar"></i><span>Randevu Takvimi</span></a></li>                               
-                <li><a [routerLink]="['/app/meetings']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-stopwatch"></i><span>Randevularım</span></a></li>                                              
+                <li><a [routerLink]="['/app/meetings']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-stopwatch"></i><span>Randevularım</span></a></li>                              
+                <li><a [routerLink]="['/app/call']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-stopwatch"></i><span>Görüntülü Görüşme</span></a></li>                                            
                 <li><a [routerLink]="['/app/profile']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-user-md"></i><span>Profilim</span></a></li>                           
                 <li><a [routerLink]="['/app/patients']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-user"></i><span>Hastalarım</span></a></li>                           
                 <li><a [routerLink]="['/app/reports']" routerLinkActive="router-link-active"  class="menu-toggle waves-effect waves-block"><i class="fas fa-file-alt"></i><span>Raporlar</span></a></li>                       

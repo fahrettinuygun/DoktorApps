@@ -11,12 +11,14 @@ export class ProfileService {
   ) { }
 
   getProfileInfo(userId){
-    console.log('profile service userId:', userId);
     return new Promise(resolve =>{
+      try {
       this.http.get<any>("http://localhost:8080/profile",{params: {userId: userId}}).subscribe(result => {
-        console.log('service result',result)
         resolve(result);
         });
+      } catch (error) {
+        resolve("profileService Error: " + error);
+      }
     })
   }
 }

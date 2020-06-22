@@ -12,6 +12,15 @@
   position: relative;
   border-radius: 3px 3px 0 0;
 }
+
+img {
+  vertical-align: middle;
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .mb-0, .my-0 {
   margin-bottom: 0!important;
 }

@@ -1,3 +1,11 @@
+img {
+    vertical-align: middle;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
 .sidebar {
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;

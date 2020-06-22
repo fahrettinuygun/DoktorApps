@@ -4,9 +4,9 @@
         <section class="boxs-simple">
             <div class="profile-header">
                 <div class="profile-info">
-                    <div class="profile-image"> <div class="avatar"> </div></div>
-                    <h4 class="mb-0"><strong>Dr. John</strong> Smith</h4>
-                    <span class="text-muted col-white">Dentist</span>
+                    <div class="profile-image"> <img *ngIf="profile && profile.imageURL" [src]="profile.imageURL" alt=""></div>
+                    <h4 class="mb-0" *ngIf="profile && profile.surname"><strong *ngIf="profile && profile.name">{{ profile.name}}</strong> {{profile.surname}}</h4>
+                    <span class="text-muted col-white" *ngIf="profile && profile.email">{{profile.email}}</span>
                     <div>
                         <button class="btn btn-info profile-button">Follow</button>
                         <button class="btn btn-warning profile-button">Message</button>
