@@ -140,9 +140,11 @@ i{
 .profile-info{
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding-left: 5px;
     color:white;
     font-weight: bold;
+    max-width: 130px;
+    justify-content: center;
     .welcome{
         font-size: 12px;
         font-weight: lighter;

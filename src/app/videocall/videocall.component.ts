@@ -12,6 +12,7 @@ export class VideocallComponent implements OnInit {
 
   ngOnInit(): void {
     const domain = 'meet.jit.si';
+    // buradaki roomName randevu oluşturulurken belirlenmiş olan roomname olacak
     const options = {
         roomName: 'JitsiMeetAPIExample',
         width: 700,

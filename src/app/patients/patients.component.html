@@ -1,4 +1,17 @@
 <div class="block-header">
-    <h2>Patients</h2>
-    <small class="text-muted">Welcome to your patients</small>
+    <div class="col-md-12 col-lg-12 col-xl-12">
+        <div class="card m-t-20">
+            <div class="body">
+                <button class="btn btn-sm btn-default hidden-lg-up m-t-0" data-toggle="collapse" data-target="#open-chats" aria-expanded="false" aria-controls="collapseExample"><i class="zmdi zmdi-chevron-down"></i></button>
+                <div class="" id="open-chats">
+                    <div *ngFor="let patient of patients; let i = index">
+                        <div class="event-name b-greensea" (click)="collapse(i)"> {{ patient.userName }} <a class=" text-muted event-remove"><i class="fas fa-trash"></i></a> </div>
+                        <div [hidden]="collapseId !== i" class="event-name-collapse b-greensea">
+                            <p>Randevu Tarihi: {{ patient.appointmentDate | date: 'dd MMMM yyyy hh:mm' }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

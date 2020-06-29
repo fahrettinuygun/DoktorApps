@@ -5,10 +5,13 @@
                 <button type="button" class="btn btn-raised btn-primary btn-sm m-t-0" data-toggle="modal" href="#cal-new-event"> <i class="fas fa-plus"></i> Events</button>
                 <button class="btn btn-sm btn-default hidden-lg-up m-t-0" data-toggle="collapse" data-target="#open-chats" aria-expanded="false" aria-controls="collapseExample"><i class="zmdi zmdi-chevron-down"></i></button>
                 <div class="" id="open-chats">
-                    <div class="event-name b-greensea" (click)="collapse(1)"> The Custom Event #1 <a class=" text-muted event-remove"><i class="fas fa-trash"></i></a> </div>
-                    <div [hidden]="collapseId !== 1" class="event-name-collapse b-greensea">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut nibh vel ex faucibus gravida. Donec vehicula metus enim, sed venenatis enim auctor in. Praesent id pellentesque risus. Ut faucibus vehicula turpis sed tincidunt. Etiam porttitor molestie vulputate. Maecenas felis ligula, ultricies aliquam fermentum nec, ultrices id purus. Maecenas volutpat eget nibh sed rutrum.
+                    <div *ngFor="let meeting of meetings; let i = index">
+                        <div class="event-name b-greensea" (click)="collapse(i)"> {{ meeting.appointmentDate | date: 'dd MMMM yyyy hh:mm' }} <a class=" text-muted event-remove"><i class="fas fa-trash"></i></a> </div>
+                        <div [hidden]="collapseId !== i" class="event-name-collapse b-greensea">
+                            <p>Hasta Adı: {{meeting.userName}}</p>
+                        </div>
                     </div>
+
                     <div class="event-name b-lightred" (click)="collapse(2)"> The Custom Event #2 <a class=" text-muted event-remove"><i class="fas fa-trash"></i></a> </div>
                     <div [hidden]="collapseId !== 2" class="event-name-collapse b-lightred">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut nibh vel ex faucibus gravida. Donec vehicula metus enim, sed venenatis enim auctor in. Praesent id pellentesque risus. Ut faucibus vehicula turpis sed tincidunt. Etiam porttitor molestie vulputate. Maecenas felis ligula, ultricies aliquam fermentum nec, ultrices id purus. Maecenas volutpat eget nibh sed rutrum.
